@@ -1,11 +1,18 @@
 
 import './App.css';
 import Header from './myComponents/Header';
+import Banner from './myComponents/Banner';
+import BgVid from './myComponents/BgVid';
 function App() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <>
+      <BgVid />
+      <div className="App">
+
+        <Header />
+        <Banner />
+      </div>
+    </>
   );
 }
 

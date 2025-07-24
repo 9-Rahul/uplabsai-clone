@@ -79,6 +79,17 @@
 @media screen and (max-width: 920px) {
     .hamburger {
         display: flex;
+        height: 25px;
+        width: 25px;
+    }
+
+    .logo-container img {
+        height: 25px;
+        width: auto;
+    }
+
+    .header {
+        padding: 30px 16px;
     }
 
     .right-header {
