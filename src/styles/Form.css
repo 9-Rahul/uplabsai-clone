@@ -1,0 +1,188 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.book-meeting {
+    width: 100%;
+    background-color: black;
+    padding: 60px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-meeting-title-and-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: rgb(109, 36, 9); */
+    padding: 10px 30px;
+}
+
+.book-meeting-title {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.book-meeting-title span {
+    color: rgb(111, 0, 232);
+}
+
+.book-meeting-text {
+    color: #696767;
+    font-size: 20px;
+    text-align: center;
+}
+
+.booking-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* background-color: green; */
+    padding: 60px 1px;
+    flex-wrap: wrap;
+}
+
+.form-box {
+    background-color: #0e0e0e;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #4e0498;
+    width: 350px;
+
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-box label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+}
+
+.form-box input,
+.form-box select {
+    margin-top: 6px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.form-box button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-box:hover {
+    box-shadow: 0 0 20px #7f00ff;
+}
+
+.form-box button:hover {
+    background-color: rgb(111, 0, 232);
+    color: white;
+    transition: 0.3s;
+}
+
+
+.info-box {
+    text-align: center;
+    color: white;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.arrow-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.arrow-down-img {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+@media (max-width: 920px) {
+    .book-meeting-title {
+        font-size: 32px;
+    }
+
+    .book-meeting-text {
+        display: none;
+    }
+
+    .booking-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .info-box {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .arrow-down-img {
+        display: flex;
+    }
+
+    .arrow-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .book-meeting {
+        padding: 5px;
+    }
+
+    .book-meeting-title-and-text {
+        text-align: center;
+    }
+
+    .book-meeting-title {
+        font-size: 25px;
+    }
+
+    .book-meeting-text {
+        font-size: 15px;
+    }
+
+    .booking-container {
+        padding: 5px;
+        align-items: center;
+    }
+
+    .form-box {
+        padding: 10px;
+        max-width: 80%;
+    }
+}
