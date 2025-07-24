@@ -5,7 +5,8 @@ const Form = () => {
     return (
         <section className="book-meeting">
             <div className="book-meeting-title-and-text">
-                <p className='book-meeting-title'>Automate Processes with <br /><span>AI Agents</span></p>
+                <div className='book-meeting-title'> Automate Processes with <br /><span>AI Agents</span>
+                </div>
                 <p className='book-meeting-text'>We help businesses reduce costs and increase productivity with Voice <br /> and Text AI Agents with hyper realistic capabilities</p>
             </div>
 

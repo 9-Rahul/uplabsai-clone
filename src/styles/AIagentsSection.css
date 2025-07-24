@@ -1,0 +1,121 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.aiAgents-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #eaeaea;
+    padding: 60px 5px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.aiAgents-left {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+}
+
+.aiAgents-left h2 {
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.aiAgents-left p {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+
+}
+
+.aiAgents-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.ai-card {
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 300px;
+    height: 400px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 1px;
+    position: relative;
+}
+
+.ai-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.ai-card img:hover {
+    opacity: 0.8;
+}
+
+.ai-card-content {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.ai-card-content:hover {
+    opacity: 0.9;
+}
+
+.ai-card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+
+.ai-card-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .aiAgents-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aiAgents-left {
+        text-align: center;
+    }
+
+    .aiAgents-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ai-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .aiAgents-container {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
