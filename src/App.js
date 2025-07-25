@@ -8,6 +8,7 @@ import AIagentsSection from './myComponents/AIagentsSection';
 import RPAsection from './myComponents/RPAsection';
 import DataAnalytics from './myComponents/DataAnalytics';
 import AbouUs from './myComponents/AbouUs';
+import Footer from './myComponents/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <RPAsection />
         <DataAnalytics />
         <AbouUs />
+        <Footer />
       </div>
     </>
   );
