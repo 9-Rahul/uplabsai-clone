@@ -1,0 +1,106 @@
+/* DataAnalytics.css */
+
+.data-analytics-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.analytics-card {
+    color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 350px;
+    height: 450px;
+    flex: 1;
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+
+    border-radius: 20px;
+}
+
+.card-content {
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.analytics-description {
+    max-width: 400px;
+    flex: 1;
+    text-align: right;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.analytics-description h2 {
+    margin-bottom: 15px;
+    font-size: 2.8rem;
+}
+
+.analytics-description p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media (max-width: 920px) {
+    .data-analytics-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 20px 15%;
+        gap: 30px;
+    }
+
+    .analytics-description {
+        text-align: left;
+    }
+
+    .card-content {
+        padding: 20px;
+        text-align: left;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .data-analytics-container {
+        padding: 20px 5px;
+    }
+
+    .analytics-description p {
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .analytics-description h2 {
+        font-size: 1.6rem;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}

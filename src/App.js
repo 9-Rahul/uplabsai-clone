@@ -6,6 +6,8 @@ import BgVid from './myComponents/BgVid';
 import Form from './myComponents/Form';
 import AIagentsSection from './myComponents/AIagentsSection';
 import RPAsection from './myComponents/RPAsection';
+import DataAnalytics from './myComponents/DataAnalytics';
+import AbouUs from './myComponents/AbouUs';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Form />
         <AIagentsSection />
         <RPAsection />
+        <DataAnalytics />
+        <AbouUs />
       </div>
     </>
   );
